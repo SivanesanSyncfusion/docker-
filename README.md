@@ -112,36 +112,17 @@ Bold BI accepts the following environment variables:
 5. After running the command, access the Bold BI App by entering APP_URL in a browser.
    ![docker-compose-startup](docs/images/docker-startup.png)
 
-# How to deploy Bold BI using advanced configuration
+## How to deploy Bold BI using advanced configuration
 
 In this section, you will learn how to run the Bold BI application using advanced configurations such as persistence volume, environment variables, manually configuring the startup of Bold BI, and running multiple containers for Bold BI.
 
-#### How to deploy Bold BI using existing DB server? 
-1. Download docker compose file using the following command.
-   ```sh
-   curl -o docker-compose.yml "https://raw.githubusercontent.com/Vinoth-Krishnamoorthy/boldbi-docker/main/deploy/single-container/docker-compose-without-environment.yaml"
-   ```
-2. Open the docker compose file and fill the mandatory fields for database details.
+#### [How to deploy Bold BI and configure startup manually?](/docs/advance-configuration.md#how-to-deploy-bold-bi-and-configure-startup-manually)
 
-    ![docker-compose-variable](docs/images/docker-compose-empty-variable.png)
+#### [How to use host path as Persistent Volume?](/docs/advance-configuration.md#how-to-use-host-path-as-persistent-volume)
 
-  * Refer to [this](#app_url-guidance) steps for APP_URL guidance.
-  * Refer to [this](/docs/environment-variable.md#environment-variables-for-configuring-application-startup-in-backend) document for environment variables.
+#### [How to deploy Bold BI using Branding variable?](/docs/advance-configuration.md#how-to-deploy-bold-bi-using-branding-variable)
 
-4. Run docker compose up command.
-   ```sh
-   docker-compose up -d
-   ```
-   ![docker-compose-command](docs/images/docker-compose-up.png)
-5. After running the command, access the Bold BI App by entering APP_URL in a browser.
-   ![docker-compose-startup](docs/images/docker-startup.png)
-#### How to deploy Bold BI and configure startup manually?
-
-#### How to use host path as Persistent Volume?
-
-#### How to deploy Bold BI using Branding variable?
-
-#### How to configure SSL certificate for Bold BI?
+#### [How to configure SSL certificate for Bold BI?](/docs/FAQ/how-to-configure-ssl-for-docker-compose.md)
 
 ### [Start multiple containers Bold BI with `docker-compose`](docs/multiple-container.md)
 
