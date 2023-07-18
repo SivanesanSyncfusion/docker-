@@ -39,7 +39,7 @@ docker run --name boldbi -p 80:80 -p 443:443 \
 * Refer [this](/docs/environment-variable.md#environment-variables-and-its-usage) table for environment variable.<br>
 * After running the command, you can access the Bold BI App by entering `APP_URL` in a browser. To know more about application startups, refer [here](#application-startup).
 
-### Persisting application data
+#### Persisting application data
 
 You can store the application data in your host machine to make the Bold BI container a stateful application. Bold BI application will read and write the data in your host machine.
  
@@ -49,7 +49,7 @@ Replace the `<host_path_for_appdata_files>` value with a directory path from you
 > Windows: `-v D:/boldbi/app_data:/application/app_data`<br/>
 > Linux: `-v /home/boldbi/app_data:/application/app_data`
 
-### Nginx configuration
+#### Nginx configuration
 
 You can mount a host directory to the Bold BI container for maintaining the Nginx configuration. You can also store SSL certificates in this directory and can configure Nginx with them.
 
@@ -122,7 +122,7 @@ docker run --name boldbi -p 80:80 -p 443:443 \
      -d syncfusion/boldbi
 ```
 
-
+You can access the Bold BI App by entering `APP_URL` in a browser.
 
 ## Application Startup
 
